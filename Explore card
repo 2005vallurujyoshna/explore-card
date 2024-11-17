@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Card</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f8f8f8;
+    }
+
+    .explore-card {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px; /* Gap between grid items */
+      max-width: 400px;
+      border: 2px solid #d0b200;
+      border-radius: 12px;
+      overflow: hidden;
+      background-color: #ffffff;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .explore-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .card-content {
+      padding: 16px; /* Space around the content */
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #6c8091;
+      margin: 0 0 8px;
+    }
+
+    .card-description {
+      font-size: 1rem;
+      color: #d0b200;
+      margin: 0;
+    }
+
+    /* Responsive Styles */
+    @media (min-width: 768px) {
+      .explore-card {
+        grid-template-columns: 1fr 1fr; /* Two-column layout */
+        max-width: 600px;
+      }
+
+      .explore-card img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .explore-card {
+        grid-template-columns: 1fr 1fr; /* Maintain two-column layout */
+        max-width: 800px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="explore-card">
+    <img src="https://ik.imagekit.io/4z8covdo9/Full%20stack/em-ginger-fried-img.png?updatedAt=1702351480869" alt="Ginger Fried Meal">
+    <div class="card-content">
+      <h2 class="card-title">Explore the Ginger Fried Meal</h2>
+      <p class="card-description">Experience the perfect balance of flavors in this ginger fried delight, crafted to perfection for your taste buds.</p>
+    </div>
+  </div>
+</body>
+</html>
